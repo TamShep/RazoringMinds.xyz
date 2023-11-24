@@ -1,0 +1,278 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme-style" rel="stylesheet" href="css/main.css">
+	<link id="theme-style" rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="shortcut icon" href="favicon.png">
+	<link id="theme-style" rel="stylesheet" href="css/main.css">
+	
+	<title>RazoringMinds - Commands</title>
+    <meta property="og:site_name" content="RazoringMinds Discord Bot">
+    <meta property="og:url" content="https://razoringminds.xyz/commands.html">
+    <meta property="og:title" content="RazoringMinds - Commands">
+	<meta property="og:description" content="RazoringMinds is a multipurpose bot developed with server owners in mind.
+	From music commands to moderation commands, RazoringMinds has everything which you need to manage and maintain your server.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://razoringminds.xyz/favicon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="theme-color" content="#c28a88">
+    <meta name="author" content="tammyshepherd">
+	<meta name="twitter:card" content="summary_large_image">
+	
+	<style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        #wrap {
+            min-height: -webkit-calc(100% - 100px);     /* Chrome */
+            min-height: -moz-calc(100% - 100px);     /* Firefox */
+            min-height: calc(100% - 100px);     /* native */
+        }
+
+        footer {
+            background-color: #333;
+            width: 100%;
+            padding: 14px 16px;
+            bottom: 0;
+            position: fixed;
+        }
+    </style>
+    <script>
+        function setCopyrightYear() {
+        var currentYear = new Date().getFullYear();  // get current year
+        var c = document.getElementById("c_year");
+        var cValue = c.firstChild.nodeValue;
+        var cParts = cValue.split(' ');
+        if (cParts.length > 1) {  // if two years separated by a hyphen
+            var cNewestYear = parseInt(cParts[2]);
+            if (cNewestYear != currentYear) {  // if newest year value is not current year
+            c.firstChild.nodeValue = cParts[0] + " " +
+                                    cParts[1] + " " +
+                                    currentYear; // reconstruct and write with current year
+            }
+        } else {
+            if (cValue != currentYear) {  // if only one year and not current, make current
+            c.firstChild.nodeValue = currentYear;
+            }
+        }
+        };
+        window.onload = function() {
+        setCopyrightYear();
+        }
+    </script>
+</head>
+
+<body bgcolor="#7289DA">
+    <ul>
+        <div class="topnav">
+            <a>RazoringMinds</a>
+            <a href="/">Home</a>
+			<a href="/tos.html">Terms of Service</a>
+            <a href="/privacypol.html">Privacy Policy</a>
+            <a class="active" href="#">Commands</a>
+        </div>
+    </ul>
+    <main id="synx-sub-con" class="synx-sub-con">
+    <div class="synx-table animated fadeIn" style="animation-duration: 3s;">
+	<table class="table table-hover">
+						<thead>
+							<tr>
+							<th>Command</th>
+							<th>Description - Usage: .command (Required) {Optional}</th>
+							</tr>
+					         	</thead>
+						        <tbody>
+							<tr>
+							<td>clear</td>
+							<td>Clears a quantity of messages. Usage: .clear {Number of Messages}</td>
+							</tr>
+							<tr>
+							<td>kick</td>
+							<td>Kick a user. Usage: .kick (Mention User) {Reason}</td>
+							</tr>
+							<tr>
+							<td>ban</td>
+							<td>Ban a user. Usage: .ban (Mention User) {Reason}</td>
+							</tr>
+							<tr>
+							<td>cooldown</td>
+							<td>Shows current cooldown for commands. Usage: .cooldown</td>
+							</tr>
+							<tr>
+							<td>invite</td>
+							<td>Invite RazoringMinds. Usage: .invite</td>
+							</tr>
+							<tr>
+							<td>vote</td>
+							<td>Create poll. Usage: .vote (Question)</td>
+							</tr>
+							<tr>
+							<td>serveremojis</td>
+							<td>List server emojis. Usage: .serveremojis</td>
+							</tr>
+							<tr>
+							<td>server</td>
+							<td>Get server info. Usage: .serverinfo</td>
+							</tr>
+							<tr>
+							<td>setnsfw</td>
+							<td>Sets a channel as NSFW. Usage: .setnsfw (On | Off)</td>
+							</tr>
+							<tr>
+							<td>info</td>
+							<td>Gets bot information. Usage: .info</td>
+							</tr>
+							<tr>
+							<td>dice</td>
+							<td>Roll dice. Usage: .dice</td>
+							</tr>
+							<tr>
+							<td>8ball</td>
+							<td>Get a question answered by 8ball. Usage: .8ball (Question)</td>
+							</tr>
+							<tr>
+							<td>ping</td>
+							<td>Get bots ping and latency information. Usage: .ping</td>
+							</tr>
+							<tr>
+							<td>escaperoom</td>
+							<td>Test your skills in a virtual escape room. Usage: .escaperoom</td>
+							</tr>
+							<tr>
+							<td>kill</td>
+							<td>Virtually kill a user. Usage: .kill (Mention)</td>
+							</tr>
+							<tr>
+							<td>play</td>
+							<td>Plays a song. Usage: .play (YouTube link | Search Term)</td>
+							</tr>
+							<tr>
+							<td>skip</td>
+							<td>Skip a song. Usage: .skip</td>
+							</tr>
+							<tr>
+							<td>stop</td>
+							<td>Stops a song. Usage: .stop</td>
+							</tr>
+							<tr>
+							<td>volume</td>
+							<td>Change volume of music. Usage: .volume (0 to 100)</td>
+							</tr>
+							<tr>
+							<td>np</td>
+							<td>Get information of currently playing song. Usage: .np</td>
+							</tr>
+							<tr>
+							<td>queue</td>
+							<td>Get list of songs scheduled to play. Usage: .queue {Page}</td>
+							</tr>
+							<tr>
+							<td>pause</td>
+							<td>Pause music. Usage: .pause</td>
+							</tr>
+							<tr>
+							<td>resume</td>
+							<td>Resumes music after being paused. Usage: .resume</td>
+							</tr>
+							<tr>
+							<td>loop</td>
+							<td>Loops currently playing track. Usage: .loop</td>
+							</tr>
+							<tr>
+							<td>bal</td>
+							<td>Get your or a user's balance. Usage: .bal {Mention}</td>
+							</tr>
+							<tr>
+							<td>work</td>
+							<td>Work and get money. Usage: .work</td>
+							</tr>
+							<tr>
+							<td>pay</td>
+							<td>Pay user. Usage: .pay (Mention) (Amount)</td>
+							</tr>
+							<tr>
+							<td>serverlist (Owner Only)</td>
+							<td>Shows servers. Usage: .serverlist</td>
+							</tr>
+							<tr>
+							<td>reload (Owner Only)</td>
+							<td>Reload bot. Usage: .reload</td>
+							</tr>
+							<tr>
+							<td>eval (Owner Only)</td>
+							<td>Evaluate code. Usage: .eval (Code)</td>
+							</tr>
+							<tr>
+							<td>yaoi</td>
+							<td>18+ Command. Usage: .yaoi</td>
+							</tr>
+							<tr>
+							<td>hentai</td>
+							<td>18+ Command. Usage: .hentai</td>
+							</tr>
+							<tr>
+							<td>ass</td>
+							<td>18+ Command. Usage: .ass</td>
+							</tr>
+							<tr>
+							<td>pussy</td>
+							<td>18+ Command. Usage: .pussy</td>
+							</tr>
+							<tr>
+							<td>holo</td>
+							<td>18+ Command. Usage: .holo</td>
+							</tr>
+							<tr>
+							<td>lewd</td>
+							<td>18+ Command. Usage: .lewd</td>
+							</tr>
+							<tr>
+							<td>phgif</td>
+							<td>18+ Command. Usage: .phgif</td>
+							</tr>
+							<tr>
+							<td>4k</td>
+							<td>18+ Command. Usage: .4k</td>
+							</tr>
+							<tr>
+							<td>anal</td>
+							<td>18+ Command. Usage: .anal</td>
+							</tr>
+						</tbody>
+					</table>
+</body>
+</html>

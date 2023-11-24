@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.png">
+	<link id="theme-style" rel="stylesheet" href="css/main.css">
+	
+	<title>RazoringMinds - Home</title>
+    <meta property="og:site_name" content="RazoringMinds Discord Bot">
+    <meta property="og:url" content="https://razoringminds.xyz/">
+    <meta property="og:title" content="RazoringMinds - Home">
+	<meta property="og:description" content="RazoringMinds is a multipurpose bot developed with server owners in mind.
+	From music commands to moderation commands, RazoringMinds has everything which you need to manage and maintain your server.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://razoringminds.xyz/favicon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="theme-color" content="#c28a88">
+    <meta name="author" content="tammyshepherd">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        #wrap {
+            min-height: -webkit-calc(100% - 100px);     /* Chrome */
+            min-height: -moz-calc(100% - 100px);     /* Firefox */
+            min-height: calc(100% - 100px);     /* native */
+        }
+
+        footer {
+            background-color: #333;
+            width: 100%;
+            padding: 14px 16px;
+            bottom: 0;
+            position: fixed;
+        }
+    </style>
+    <script>
+        function setCopyrightYear() {
+        var currentYear = new Date().getFullYear();  // get current year
+        var c = document.getElementById("c_year");
+        var cValue = c.firstChild.nodeValue;
+        var cParts = cValue.split(' ');
+        if (cParts.length > 1) {  // if two years separated by a hyphen
+            var cNewestYear = parseInt(cParts[2]);
+            if (cNewestYear != currentYear) {  // if newest year value is not current year
+            c.firstChild.nodeValue = cParts[0] + " " +
+                                    cParts[1] + " " +
+                                    currentYear; // reconstruct and write with current year
+            }
+        } else {
+            if (cValue != currentYear) {  // if only one year and not current, make current
+            c.firstChild.nodeValue = currentYear;
+            }
+        }
+        };
+        window.onload = function() {
+        setCopyrightYear();
+        }
+    </script>
+</head>
+
+<body bgcolor="#7289DA">
+    <ul>
+        <div class="topnav">
+            <a>RazoringMinds</a>
+            <a class="active" href="#">Home</a>
+            <a href="/tos.html">Terms of Service</a>
+            <a href="/privacypol.html">Privacy Policy</a>
+            <a href="/commands.html">Commands</a>
+        </div>
+    </ul>
+
+    <div class="flex-item">
+        <img src="785375.gif" alt="" width="800" height="600" style="float: left;" />
+        <div>
+            <h1 class="ariel" style="font-size:60px;"><span style="color: #ffffff;">RazoringMinds</span></h1>
+            <div class="ariel" style="font-size:40px;"><span style="color: #ffffff;">RazoringMinds is a multipurpose bot developed with server owners in mind. Trusted by over 600 servers and actively being developed.</span></div>
+            <br>
+            <p><button class="btn"><a href="https://discord.com/api/oauth2/authorize?client_id=523551992279203840&permissions=8&scope=bot">Invite</a></button>&nbsp; &nbsp;<button class="btn"><a href="https://discord.gg/PC6RWFn">Support</a></button>&nbsp; &nbsp;<button class="btn"><a href="commands.html">Commands</a></button>&nbsp; &nbsp;<button class="btn"><a href="privacypol.html">Privacy Policy</a></button></p>
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <footer>
+        <div style="color: #ffffff; text-align: center;">Copyright &copy; <span id="c_year">2019</span> Casey Media, L.L.C. in partnership with Razor Köpfe GmbH (RazoringMinds GmbH) - All bot code or snippets is copyright &copy; <span id="c_year">2019</span> Casey Maxwell AG - All Rights Reserved</div>
+        <br>
+    </footer>
+</body>
+
+</html>
